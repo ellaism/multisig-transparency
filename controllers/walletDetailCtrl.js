@@ -348,7 +348,7 @@
 
                       var savedABI = ABI.get()[info.to];
 
-                      $scope.transactions[tx].toUrl = "https://etherscan.io/address/" + info.to;
+                      $scope.transactions[tx].toUrl = "https://explorer.ellaism.org/addr/" + info.to;
 
                       // Get data info if data has not being decoded, because is a new transactions or we don't have the abi to do it
                       if (!$scope.transactions[tx].dataDecoded || $scope.transactions[tx].dataDecoded.notDecoded || ($scope.transactions[tx].dataDecoded.usedABI && (!savedABI || savedABI.abi ))) {
