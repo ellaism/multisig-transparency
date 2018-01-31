@@ -245,7 +245,7 @@ angular.module('multiSigWeb').run(['$templateCache', function($templateCache) {
     "    <div class=\"panel panel-default\">\n" +
     "      <div class=\"panel-heading\">\n" +
     "        <h4>\n" +
-    "          Owners\n" +
+    "          Signers\n" +
     "        </h4>\n" +
     "      </div>\n" +
     "      <table class=\"table table-bordered\" uib-collapse=\"hideOwners\">\n" +
