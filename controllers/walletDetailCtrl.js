@@ -5,19 +5,9 @@
     .controller("walletDetailCtrl", function ($scope, $http, $filter, $sce, Wallet, $routeParams, Utils, Transaction, $interval, $uibModal, Token, ABI) {
       $scope.wallet = {};
 
-      const hardcodedOwners = {
-        "0x4838eab6f43841e0d233db4cea47bd64f614f0c5": "Jorge Izquierdo",
-        "0xddc1b51b67dabd408b224d0f7dfcc93ec4b06265": "Luis Cuende",
-        "0xbeefbeef03c7e5a1c29e0aa675f8e16aee0a5fad": "Community Multisig",
-      }
-
-      const hardcodedTagline = {
-        "0x4838eab6f43841e0d233db4cea47bd64f614f0c5": ", Cofounder & Tech Lead",
-        "0xddc1b51b67dabd408b224d0f7dfcc93ec4b06265": ", Cofounder & Project Lead",
-        "0xbeefbeef03c7e5a1c29e0aa675f8e16aee0a5fad": "",
-      }
-
-      const hardCodedAddress = "0xcafe1a77e84698c83ca8931f54a755176ef75f2c"
+      const hardcodedOwners = MULTISIG_OWNERS
+      const hardcodedTagline = MULTISIG_TAGLINES
+      const hardCodedAddress = MULTISIG_ADDRESS
 
       $scope.isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
 
