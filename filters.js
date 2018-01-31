@@ -101,22 +101,23 @@
       return function (num) {
         if (num) {
             var casted = new Web3().toBigNumber(num).div('1e18').toNumber();
-            return casted.formatMoney() + " ETH";
+            return casted.formatMoney() + " ELLA";
           }
           else {
-            return "0.00 ETH";
+            return "0.00 ELLA";
           }
         }
         return null;
     })
     .filter('fiat', function () {
       return function (num) {
-        return num ? `($${num.formatMoney()})` : null
+        // return num ? `($${num.formatMoney()})` : null
+        return null;
       };
     })
     .filter('etherscan', function () {
       return function (txid) {
-        return 'https://etherscan.io/tx/' + txid
+        return 'https://explorer.ellaism.org/tx/' + txid
       };
     })
     .filter('token', function () {
