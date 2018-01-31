@@ -6,7 +6,7 @@
 </div>
 <div class="panel panel-default">
   <div class="panel-heading">
-      <p class="centered">Please note that some past transactions could have inaccurate data, please <a href="https://github.com/aragon/multisig-transparency/issues/new">inform us</a> if you see anything weird. You can read more about our <a href="https://blog.aragon.one/why-transparency-matters-d6f9e6e10985">transparency model</a>.</p>
+      <p class="centered">Please note that some past transactions could have outdated data, please <a href="https://github.com/ellaism/meta/issues/new">inform us</a> if you see anything weird. You can read more about our <a href="https://github.com/ellaism/meta/tree/master/multisig">transparency model</a>.</p>
   </div>
 </div>
 <div class="row">
@@ -63,7 +63,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>Ether</td>
+            <td>Ellaism</td>
             <td class="text-right"><span>{{balance|ether}} {{balanceUSD|fiat}}</span></td>
           </tr>
           <tr ng-repeat="token in wallet.tokens track by $index">
@@ -76,9 +76,6 @@
           </tr>
         </tbody>
       </table>
-      <div ng-show="!totalTokens" class="panel-body text-center" uib-collapse="hideTokens">
-        No tokens. Add an ERC20 token <a href="" ng-click="addToken()">now</a>.
-      </div>
     </div>
   </div>
 </div>
@@ -141,7 +138,7 @@
     <tbody>
       <tr ng-repeat="txId in txIds track by $index">
         <td>
-          <a target="blank" href="{{transactions[txId].details.multisigTx|etherscan}}">{{txId|bigNumber}}</a>
+          {{txId|bigNumber}}
         </td>
         <td>
           <span uib-popover="{{transactions[txId].to}}" popover-enable="'true'" popover-trigger="'mouseenter'">
