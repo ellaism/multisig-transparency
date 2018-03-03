@@ -17,6 +17,12 @@
 			"desc": "Register reverse name record of devfund.ella",
 			"fiat": 0,
 			"entities": []
+		},
+		{
+			"id": 3,
+			"desc": "Bootstrap Contributor Fund",
+			"fiat": 0,
+			"entities": []
 		}
 	]
 }
