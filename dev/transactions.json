@@ -11,7 +11,7 @@
 			"desc": "Initial test transaction",
 			"fiat": 0,
 			"entities": []
-		}
+		},
 		{
 			"id": 2,
 			"desc": "Register reverse name record of devfund.ella",
