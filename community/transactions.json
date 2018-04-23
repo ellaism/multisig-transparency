@@ -1,16 +1,4 @@
 {
 	"txs": [
-		{
-			"id": 0,
-			"desc": "Initial test transaction",
-			"fiat": 0,
-			"entities": []
-		},
-		{
-			"id": 1,
-			"desc": "Initial test transaction",
-			"fiat": 0,
-			"entities": []
-		}
 	]
 }
