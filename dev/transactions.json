@@ -23,6 +23,12 @@
 			"desc": "Bootstrap Contributor Fund",
 			"fiat": 0,
 			"entities": []
+		},
+		{
+			"id": 4,
+			"desc": "Request for test transaction for Community Fund",
+			"fiat": 0,
+			"entities": []
 		}
 	]
 }
