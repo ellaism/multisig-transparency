@@ -1,8 +1,20 @@
 {
 	"txs": [
 		{
-			"id": 1,
+			"id": 0,
 			"desc": "Initial test transaction",
+			"fiat": 0,
+			"entities": []
+		},
+		{
+			"id": 1,
+			"desc": "Cash price for Kubo00's blog post during the spring giveaway contest",
+			"fiat": 0,
+			"entities": []
+		},
+		{
+			"id": 2,
+			"desc": "Spring giveaway contest swag store payment",
 			"fiat": 0,
 			"entities": []
 		}
